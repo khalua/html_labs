@@ -1,45 +1,3 @@
-/* 
-Project Name: Ecard.ly
-Client: General Assembly 
-Author: Christopher Castig | @castig
-Developer @GA in NYC
-*/
-
-/* Box Model Hack */
-* {
-     -moz-box-sizing: border-box; /* Firexfox */
-     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-     box-sizing: border-box; /* IE */
-}
-
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-}
-
-.clear {
-	clear: both;
-}
-
-.alignright {
-	float: right; 
-	padding: 0 0 10px 10px; /* note the padding around a right floated image */
-}
-
-.alignleft {
-	float: left; 
-	padding: 0 10px 10px 0; /* note the padding around a left floated image */
-}
-
-/*----------------------------------------------------------------------------- 
-BODY 
------------------------------------------------------------------------------*/
-
 
 body {
 	background: url('../images/background.jpg') repeat-x #d6d6d6; /* add a fallback color of #d6d6d6 */
@@ -55,13 +13,12 @@ a {
 	font-weight: bold;
 }
 
-/* Put the image on the <a> and not the <h1> itself so that the link works properly */
 h1 a {
 	background: url('../images/logo.png') no-repeat;
 	width: 216px;
 	height: 213px;
 	margin: auto;
-	display: block;	
+	display: block;
 
 	/* image replacment technique */
 	text-indent: 100%;
@@ -73,20 +30,21 @@ h2 {
 	font-size: 20px;
 	margin: 10px 0;
 }
-	h2 a {
-		text-decoration: none;
-		color: #000000;
+
+h2 a {
+	text-decoration: none;
+	color: #000000;
 	}
 
+#main h1 {
+	line-height: 40px;
+	font-size: 15px;
+	font-weight: bold;
+}
 
-/*----------------------------------------------------------------------------- 
-MAIN SECTIONS
------------------------------------------------------------------------------*/
-
-/* Center the container */
 #container {
 	width: 940px;
-	margin: auto;	
+	margin: auto;
 }
 
 #header {
@@ -94,15 +52,45 @@ MAIN SECTIONS
 }
 
 #main {
-	background: #FFF;
 	float: left;
-	width: 960px;
+	background: #FFF;
+	width: 600px;
 	padding: 20px;
+	margin: 0px 10px 0 50px;
 }
 
-	.post {
-		margin-bottom: 50px;
-	}
+#right_sidebar {
+	display: inline-block;
+	background: #FFF;
+	width: 250px;
+	height: 700px;
+	padding-top: 20px;
+	padding-left: 20px;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+#right_sidebar img {
+	margin-top: 15px;
+}
+
+.red {
+	color: red;
+}
+
+.post {
+	margin-top: 20px;
+	margin-bottom: 50px;
+	border-top: 2px dashed black;
+	border-bottom: 2px solid black;
+	line-height: 25px;
+}
+
+#footer {
+	clear:both;
+	margin-left: 380px;
+	padding-top: 50px;
+}
 
 
 
